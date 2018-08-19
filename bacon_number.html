@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="title">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Project Home </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="greyBorder"></div>
+  <div class="project_name">
+    <h1> BACON.NUMBER </h1>
+  </div>
+  <div class="all_contents">
+    <div id="header">
+      <div class="logo">
+        <h1> JANVI KALRA </h1>
+        <h2> Computer Science & Philosophy </h2>
+      </div>
+      <nav class = "nav_bar">
+         <h4>
+           <ul class="nav_list">
+             <li><a href="./project_tiles.html">Projects</a></li>
+             <li><a href="./about.html">About</a></li>
+           </ul>
+         </h4>
+      </nav>
+    </div>
+    <div id="project_contents">
+      <div class="project_intro">
+        <h5> GOAL: find the degree of separation between 2 celebrities in a given data base </h5>
+        <h5> SYNPOSIS: individual project | spring 2018 | java </h5>
+        <h5> KEY SKILLS: graph construction & analysis | parsing a text file | command-line interface </h5>
+        <!-- <h5> VALIDATION: </h5> -->
+      </div>
+      <div id="project_test">
+        <div class="project_trinket">
+          <iframe src="https://trinket.io/embed/java/7d0247e6e9?toggleCode=true&start=result" width="100%" height="100%" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+        <div class="project_instructions">
+          <div class="project_instructions_test_me">
+            <h5> TEST ME! <h5>
+          </div>
+          <h9>
+          <table style="width:100%">
+            <tr>
+              <th>Command</th>
+              <th>Example</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>p {celebrity-name}</td>
+              <td>p Anne Hathaway</td>
+              <td>path from celebrity to the center celebrity (initially Kevin Bacon)</td>
+            </tr>
+            <tr>
+              <td>u {celebrity-name}</td>
+              <td>u Emma (II) Watson</td>
+              <td>change center celeb</td>
+            </tr>
+            <tr>
+              <td>i</td>
+              <td>i</td>
+              <td>list those infinitely separated from the center celeb</td>
+            </tr>
+            <tr>
+              <td>d {low-num} {high-num}</td>
+              <td>d 80 81</td>
+              <td>those separated from X celebs by 1 degree, where X btwn low & high num</td>
+            </tr>
+            <tr>
+              <td>q</td>
+              <td>q</td>
+              <td>quit game</td>
+            </tr>
+          </table>
+        </h9>
+        </div>
+      </div>
+      <div id="project_process">
+        <h4> Key Process: </h4>
+        <h5>
+          <ol type="1">
+            <li>Parse the text files to build 3 maps. (1) movie ID -> movie name (2) actor ID -> actor name (3) movie -> all actors. Include try catch statements for parsing.</li>
+            <li>Use the maps to build a Graph w/ actors as vertices and the set of shared movies as edges. </li>
+            <li>Run a BFS on the Graph, starting from the center-of-the-universe actor, to construct a tree of shortest paths. The center-of-the-universe actor is the root, every other non-infinitely separated actor is a node.</li>
+            <li>Backtrace shortest-path Tree until root, storing edge data as you proceed, to find the numerical separation and path of separation </li>
+            <li>Graph analysis: use recursion to find the average distance from root to node in the tree, a representation of the average separation from the center-of-universe actor. </li>
+            <li> Graph analysis: compare number of nodes in Graph to shortest-path Tree, a representation of connectivity of center-of-universe actor. </li>
+            <li> Use Scanner to create a command-line-interface, adding aditional features. Create series of try-catch & if statements to catch invalid user inputs.</li>
+          </ol>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+</body>

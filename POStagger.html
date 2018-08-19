@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="title">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Project Home </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <style>
+    #project_test{
+      border: inset;
+      height: 40vh;
+    }
+
+    #project_test h5{
+      margin-top: 15vh;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="greyBorder"></div>
+  <div class="project_name">
+    <h1> SPEECH.TAGGING </h1>
+  </div>
+  <div class="all_contents">
+    <div id="header">
+      <div class="logo">
+        <h1> JANVI KALRA </h1>
+        <h2> Computer Science & Philosophy </h2>
+      </div>
+      <nav class = "nav_bar">
+         <h4>
+           <ul class="nav_list">
+             <li><a href="./project_tiles.html">Projects</a></li>
+             <li><a href="./about.html">About</a></li>
+           </ul>
+         </h4>
+      </nav>
+    </div>
+    <div id="project_contents">
+      <div class="project_intro">
+        <h5> GOAL: intelligently identifying the part-of-speech of words in sentence </h5>
+        <h5> SYNPOSIS: Individual project | Spring 2018 | Java </h5>
+        <h5> KEY SKILLS: Hidden Markov Models | Viterbi Algorithm | Parsing files, nested Maps, Graphs, Priority Qs </h5>
+        <h5> VALIDATION: 96.4% accuracy on the Brown corpus (35090/36,394 words correct) </h5>
+      </div>
+      <div id="project_test">
+        <h5> Unfortunately, this program requires reading files with sizes beyond a web-browser’s capability.
+          <br>
+          Thus, instead of a trinket, I will be adding a simple video here of the tagger in action soon... </h5>
+
+      </div>
+      <div id="project_process">
+        <h4> Key Process: </h4>
+        <h5>
+          <ol type="1">
+            <li> Given a testing corpus, sentences with the parts of speech already tagged. Parsed the testing corpus using a Map to compute the probability of (a) a word being a particular part of speech (b) parts-of-speeches it transitions to</li>
+            <li> Combined this information into a Graph creating a Hidden Markov model </li>
+            <li>  Implemented the Viterbi algorithm. In a sentence, for each word there are multiple options for parts-of-speeches to follow it. The Viterbi algorithm uses the information you give it to calculate which transition is most likely, thereby indicating what is the most likely sequence of parts-of-speeches. </li>
+            <li> Used Scanner to create a user interface that tags each word the user types. </li>
+          </ol>
+        </h5>
+      </div>
+
+    </div>
+  </div>
+
+</body>
