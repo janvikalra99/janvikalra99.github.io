@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="title">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Atari Pong </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <style>
+    .project_name {
+      margin-top: 24vh;
+    }
+    #project_test{
+      height: 72vh;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="greyBorder"></div>
+  <div class="project_name">
+    <h1> ATARI.PONG </h1>
+  </div>
+  <div class="all_contents">
+    <div id="header">
+      <div class="logo">
+        <h1> JANVI KALRA </h1>
+        <h2> Computer Science & Philosophy </h2>
+      </div>
+      <nav class = "nav_bar">
+         <h4>
+           <ul class="nav_list">
+             <li><a href="./index.html">Projects</a></li>
+             <li><a href="./about.html">About</a></li>
+           </ul>
+         </h4>
+      </nav>
+    </div>
+    <div id="project_contents">
+      <div class="project_intro">
+        <h5> <b> GOAL: </b> build a 2 person Pong computer game </h5>
+        <h5> <b> SYNPOSIS: </b> Individual project | Winter 2018 | Python  </h5>
+        <h5> <b> KEY SKILLS: </b> Animation | Responding to keyboard input | Objects reacting to their environment </h5>
+      </div>
+      <div id="project_test">
+        <h5> <b> VIDEO OF PROGRAM IN ACTION </b> </h5>
+        <iframe width="280" height="410" src="https://www.youtube.com/embed/1xJh8KERBwg?rel=0&autoplay=1&loop=1&playlist=1xJh8KERBwg" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        <h7> <br> A, Z are user 1’s controls. M, K for user 2. R starts a new game. </h7>
+      </div>
+
+      <div id="project_process">
+        <h4> Key Process: </h4>
+        <h5>
+          <ol type="1">
+            <li>Created the virtual environment by <b>creating shapes</b> for the paddles and ball. Gave each shape an initial location</li>
+            <li>When key ‘A’  is pressed, decreased the left paddle’s location by a set paddle velocity. Similarly, changed the respective paddle position for ‘Z’ ‘M’ and ‘K’ </li>
+            <li>Set paddle <b>boundries</b> so the shape never goes off the screen. </li>
+            <li>Constantly added a ball <b>velocity</b> value to the ball’s x & y location </li>
+            <li>If the ball hits the screen’s top/bottom or a paddle, flip the ball's direction by adding a <b>negative sign</b> to the ball velocity </li>
+            <li>If the ball hits the screen’s edge on the right/left side, <b>stop accepting user input</b> and print Game Over  </li>
+            <li>When ‘R’ is pressed, <b>reset</b> the location of all shapes to their initial location. Force quit program when ‘Q’ is pressed</li>
+          </ol>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+</body>

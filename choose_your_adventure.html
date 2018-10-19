@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="title">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Interactive Story </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <style>
+    .project_trinket{
+      float: none;
+      width: 68%;
+    }
+    #project_test{
+      text-align: center;
+    }
+    .project_name {
+      margin-top: 18vh;
+      padding-right: 1%;
+    }
+    .project_name h1{
+      font-size: 17px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="greyBorder"></div>
+  <div class="project_name">
+    <h1> INTERACTIVE.STORY </h1>
+  </div>
+  <div class="all_contents">
+    <div id="header">
+      <div class="logo">
+        <h1> JANVI KALRA </h1>
+        <h2> Computer Science & Philosophy </h2>
+      </div>
+      <nav class = "nav_bar">
+         <h4>
+           <ul class="nav_list">
+             <li><a href="./index.html">Projects</a></li>
+             <li><a href="./about.html">About</a></li>
+           </ul>
+         </h4>
+      </nav>
+    </div>
+    <div id="project_contents">
+      <div class="project_intro">
+        <h5> <b>GOAL:</b> Creating an interactive story where the user chooses between crossroads to determine their fate </h5>
+        <h5> <b>SYNPOSIS:</b> Individual Project | Winter 2018 | Python </h5>
+        <h5> <b>KEY SKILLS:</b> Graphs, dictionary | User input | Nested while loops | Parsing text file </h5>
+      </div>
+      <div id="project_test">
+        <h5> <b><u>TEST ME!</u></b> <h5>
+        <div class="project_trinket">
+          <iframe src="https://trinket.io/embed/python3/4e6cfb0839?outputOnly=true&runOption=run&start=result" width="100%" height="410" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <div id="project_process">
+        <h4> Key Process: </h4>
+        <h5>
+          <ol type="1">
+            <li><b>Parse the text file</b> to create a graph representing the choices the user has at each stage </li>
+            <li>Set the first crossroad the user has to choose between to be the current position in the <b>graph</b></li>
+            <li>Depending on the letter the <b>user inputs</b>, reassign the current position in the graph to be the next crossroad in the user’s route chosen </li>
+            <li>Continue reassigning the current position until the story comes to an end, represented by the fact that there are no more crossroads (aka: the node has no adjacent vertices) </li>
+            <li>Ask the user if they want to play again. If the user says yes, reassign the current position to be the first crossroad (aka: the start vertex). If the user says no, break out of the <b>outer while loop</b> using a <b>boolean</b> and end the program </li>
+          </ol>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+</body>

@@ -5,17 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Project Home </title>
+  <title> Bacon Number Calculator </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
   <!-- ICONS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <style>
+    .project_instructions{
+      margin-top: 11vh;
+    }
+    td{
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .project_name {
+      margin-top: 18vh;
+      padding-right: 2%;
+    }
+    .project_name h1{
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
   <div class="greyBorder"></div>
   <div class="project_name">
-    <h1> BACON.NUMBER </h1>
+    <h1> BACON.NUM.CALCULATOR </h1>
   </div>
   <div class="all_contents">
     <div id="header">
@@ -34,19 +52,18 @@
     </div>
     <div id="project_contents">
       <div class="project_intro">
-        <h5> GOAL: find the degree of separation between 2 celebrities in a given data base </h5>
-        <h5> SYNPOSIS: individual project | spring 2018 | java </h5>
-        <h5> KEY SKILLS: graph construction & analysis | parsing a text file | command-line interface </h5>
+        <h5> <b> GOAL: </b> Find the degree of separation between 2 celebrities in a given data base </h5>
+        <h5> <b> SYNPOSIS: </b> Individual Project | Spring 2018 | Java </h5>
+        <h5> <b> KEY SKILLS: </b> Graph construction & analysis | Parsing a text file | Command-line interface </h5>
         <!-- <h5> VALIDATION: </h5> -->
       </div>
       <div id="project_test">
         <div class="project_trinket">
+          <b><u>PLAY ME!</b></u>
           <iframe src="https://trinket.io/embed/java/7d0247e6e9?toggleCode=true&start=result" width="100%" height="100%" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         </div>
         <div class="project_instructions">
-          <div class="project_instructions_test_me">
-            <h5> TEST ME! <h5>
-          </div>
+          <h5> <b>GAME INSTRUCTIONS:<b><h5>
           <h9>
           <table style="width:100%">
             <tr>
@@ -57,12 +74,12 @@
             <tr>
               <td>p {celebrity-name}</td>
               <td>p Anne Hathaway</td>
-              <td>path from celebrity to the center celebrity (initially Kevin Bacon)</td>
+              <td>display degree of separation from inputted celebrity to center celeb (center is initially Kevin Bacon)</td>
             </tr>
             <tr>
               <td>u {celebrity-name}</td>
               <td>u Emma (II) Watson</td>
-              <td>change center celeb</td>
+              <td>change the center celeb</td>
             </tr>
             <tr>
               <td>i</td>
@@ -72,7 +89,7 @@
             <tr>
               <td>d {low-num} {high-num}</td>
               <td>d 80 81</td>
-              <td>those separated from X celebs by 1 degree, where X btwn low & high num</td>
+              <td>list everybody separated by 1 degree from from X celebs, where X is in-between low & high num</td>
             </tr>
             <tr>
               <td>q</td>
@@ -87,13 +104,13 @@
         <h4> Key Process: </h4>
         <h5>
           <ol type="1">
-            <li>Parse the text files to build 3 maps. (1) movie ID -> movie name (2) actor ID -> actor name (3) movie -> all actors. Include try catch statements for parsing.</li>
-            <li>Use the maps to build a Graph w/ actors as vertices and the set of shared movies as edges. </li>
-            <li>Run a BFS on the Graph, starting from the center-of-the-universe actor, to construct a tree of shortest paths. The center-of-the-universe actor is the root, every other non-infinitely separated actor is a node.</li>
-            <li>Backtrace shortest-path Tree until root, storing edge data as you proceed, to find the numerical separation and path of separation </li>
-            <li>Graph analysis: use recursion to find the average distance from root to node in the tree, a representation of the average separation from the center-of-universe actor. </li>
-            <li> Graph analysis: compare number of nodes in Graph to shortest-path Tree, a representation of connectivity of center-of-universe actor. </li>
-            <li> Use Scanner to create a command-line-interface, adding aditional features. Create series of try-catch & if statements to catch invalid user inputs.</li>
+            <li> <b>Parse text files</b> to build 3 maps. (1) movie ID -> movie name (2) actor ID -> actor name (3) movie -> all actors. Include try catch statements for parsing.</li>
+            <li>Use the <b>maps</b> to build a <b>graph</b> w/ actors as vertices and the set of shared movies as edges. </li>
+            <li>Run a <b>BFS</b> on the graph, starting from the center-of-the-universe actor, to construct a <b>tree</b> of shortest paths. The center-of-the-universe actor is the root, every other non-infinitely separated actor is a node.</li>
+            <li><b>Backtrace</b> shortest-path tree until root, storing edge data as you proceed, to find the numerical separation and path of separation </li>
+            <li>Graph analysis: use <b>recursion</b> to find the average distance from root to node in the tree, a representation of the average separation from the center-of-universe actor. </li>
+            <li> Graph analysis: compare number of nodes in graph to shortest-path tree, a representation of connectivity of center-of-universe actor. </li>
+            <li> Use <b>Scanner</b> to create a command-line-interface, adding aditional features. Create series of <b>try-catch</b> & if statements to catch invalid user inputs.</li>
           </ol>
         </h5>
       </div>

@@ -5,17 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Project Home </title>
+  <title> Huffman Compressor </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
   <!-- ICONS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <style>
+    .project_name {
+      margin-top: 18vh;
+      padding-right: 1%;
+    }
+    .project_name h1{
+      font-size: 15px;
+    }
+    .project_instructions{
+      margin-top: 11vh;
+    }
+
+  </style>
 </head>
 
 <body>
   <div class="greyBorder"></div>
   <div class="project_name">
-    <h1> HUFFMAN.ENCODING </h1>
+    <h1> HUFFMAN.COMPRESSOR </h1>
   </div>
   <div class="all_contents">
     <div id="header">
@@ -34,47 +47,37 @@
     </div>
     <div id="project_contents">
       <div class="project_intro">
-        <h5> GOAL: compressing and decompressing a file </h5>
-        <h5> SYNPOSIS: Individual project | Spring 2018 | Java </h5>
-        <h5> KEY SKILLS: Trees, Maps, Priority Queues | File Input & Output | Implementing Huffman’s Alg* </h5>
-        <h5> VALIDATION: War & Peace novel (587,000 words) 3.2MB -> 1.8MB in 140 nanoseconds </h5>
+        <h5> <b> GOAL: </b> compressing and decompressing a file </h5>
+        <h5> <b> SYNPOSIS: </b> Individual project | Spring 2018 | Java </h5>
+        <h5> <b> KEY SKILLS: </b> Trees, Maps, Priority Queues | File Input & Output | Implementing Huffman’s Alg* </h5>
+        <h5> <b> VALIDATION: </b> War & Peace novel (587,000 words) 3.2MB -> 1.8MB in 140 nanoseconds </h5>
       </div>
       <div id="project_test">
         <div class="project_trinket">
-          <iframe src="https://trinket.io/embed/java/a327fcae60?toggleCode=true" width="100%" height="100%" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+          <u><b> TEST ME! </b></u>
+          <iframe src="https://trinket.io/embed/java/a327fcae60" width="100%" height="100%" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         </div>
         <div class="project_instructions">
-          <div class="project_instructions_test_me">
-            <h5> TEST ME! <h5>
-          </div>
-          <h5>
-            <ol type="1">
-              <li>Click ">" next to "Driver.java" </li>
-              <li> Notice there’s only 1 .txt file: tester.txt </li>
-              <li>Press the play sign (shaded >) </li>
-              <li>Click the pencil, then ">" to scroll through the files again.</li>
-              <li> Notice 2 new '.txt' files! Click them to view compressed & decompressed files </li>
-            </ol>
-          You can run this program with any text file. Simply change the contents inside tester.txt and watch the magic unfold.
-          </h5>
+          <iframe width="400" height="315" src="https://www.youtube.com/embed/_rk0hXVe-Us?cc_load_policy=1&showInfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
       <div id="project_process">
         <h4> Key Process: </h4>
         <h5>
           <ol type="1">
-            <li>Read the text file and generated a frequency Map of the file’s characters</li>
-            <li>Generated a prefix-free code for each character by first, creating a tree for each character. Then, combined the trees to create a Binary Tree where each character is a leaf, and each edge is either a 0 or 1. Used a Priority Queue when combining
-              trees to ensure the highest freqency characters are closest to the root, thereby having the shortest codes. Use recursion to traverse the binary tree just once, then stored the code for each character in a Hash Map. </li>
-            <li>To compress, use the Map to find the code for each character in the text file. Create a new file, writing corressponding bits on it. Was given a pre-written code to convert binary to bits.</li>
-            <li>To decompress, first changed from bits to binary. Then traversed the Binary Tree, left for 0, right for 1. Once reached a leaf, wrote the corresponding character to a new file and restarted traversing the tree from the root until there were no more binary numbers to read.  </li>
+            <li>Read the text file and generated a frequency <b>hash map</b> of the file’s characters</li>
+            <li>Generated a prefix-free code for each character by first, creating a tree for each character. Then, combined the trees to create a <b>binary tree</b> where each character is a leaf, and each edge is either a 0 or 1. Used a <b>priority queue</b> when combining
+              trees to ensure the highest freqency characters are closest to the root, thereby having the shortest codes. Used <b>recursion</b> to traverse the binary tree just once, then stored the code for each character in a map. </li>
+            <li>To compress, used the map to find the code for each character in the text file. <b> Created a new file</b>, writing corressponding bits on it. Was given a pre-written code to convert binary to bits.</li>
+            <li>To decompress, first changed from bits to binary. Then traversed the binary tree, left for 0, right for 1. Once reached a leaf, wrote the corresponding character to a new file and restarted traversing the tree from the root until there were no more binary numbers to read.  </li>
           </ol>
         </h5>
       </div>
       <div id="final_info">
-        <h7> *Huffman System; a variable-length character encoding system where frequently occurring characters in a file are assigned shorter
+        <br>
+        <h7><i> *Huffman System: a variable-length character encoding system where frequently occurring characters in a file are assigned shorter
 code words than infrequently occurring ones. (A code word is a binary sequence.) This is different from ASCII that indiscriminately
-uses 7 bits to all characters in a file. </h7>
+uses 7 bits to all characters in a file. </i></h7>
       </div>
     </div>
   </div>

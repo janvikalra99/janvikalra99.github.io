@@ -74,8 +74,11 @@ ul {
     font-weight: 500;
 }
 
-.active {
+.nav_list .current{
   color: #114B5F;
+  font-weight: 500;
+  box-shadow: inset 0 0px 0 #114B5F, inset 0 -1px 0 #114B5F;
+
 }
 
 #project_contents{
@@ -83,17 +86,17 @@ ul {
   width: 98%;
   margin: 4vh auto;
   display: block;
-  /* border: solid 1px maroon; */
+  /* border: solid 1px lightblue; */
 }
 
 .project_name {
-  width: 6%;
+  /* width: 6%; */
   display: inline-block;
   /* border: solid 1px red; */
   position: fixed;
   right: 0;
-  margin: 9vh auto;
-  padding: 0 1%;
+  margin-top: 19vh;
+  /* padding: 0 1%; */
 }
 
 .project_name h1{
@@ -131,6 +134,7 @@ ul {
   width: 49%;
   /* border: solid lightblue; */
   vertical-align: top;
+  text-align: center;
 }
 
 .project_instructions_test_me{
@@ -160,13 +164,14 @@ td{
   display: inline-block;
   width: 49%;
   height: 100%;
-  /* border: solid; */
   float: right;
+  text-align: center;
 }
 
 #project_process{
   /* border: solid 2px black; */
   margin: 1vh auto;
+  margin-top: 10vh;
 }
 
 #final_info{
@@ -222,7 +227,7 @@ td{
 .contact_me{
   float: right;
   width: 20%;
-  height: 12vh;
+  margin-top: -4%;
 }
 
 .contact_me h1{
@@ -236,10 +241,46 @@ td{
   padding-right: 5px;
 }
 
-
 .coming_soon{
   margin-top: 25vh;
   text-align: center;
+}
+
+.button-left{
+  background-color: #216869;
+  color: white;
+  width: 5%;
+  height: 5vh;
+  font-size: 17px;
+  outline: 0;
+  position: absolute;
+  left: 9%;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+}
+
+.button-right{
+  background-color: #216869;
+  border: none;
+  color: white;
+  width: 5%;
+  height: 5vh;
+  font-size: 17px;
+  outline: 0;
+  position: absolute;
+  right: 9%;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+}
+
+.button-left:hover, .button-right:hover {
+  background: #FFFCF9;
+   border: solid #216869 2px;
+  color: #216869;
 }
 
 h1 {
@@ -258,7 +299,7 @@ h2 {
 
 h3 {
   font-weight: 300;
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
   color: #114B5F;
   line-height: normal;
@@ -286,7 +327,8 @@ h6 {
   margin: 0 auto 0;}
 
 h7 {
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 h8{
@@ -295,6 +337,9 @@ h8{
 
 h9{
   font-size: 13px;
+}
+b{
+  font-weight: 500;
 }
 
 .column{

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="title">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Solar System Simulator </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+  <style>
+    #project_test{
+      height: 70vh;
+      text-align: center;
+    }
+    .project_name {
+      margin-top: 19vh;
+      padding-right: 2%;
+    }
+    .project_name h1{
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="greyBorder"></div>
+  <div class="project_name">
+    <h1> SOLAR.SYSTEM.SIM </h1>
+  </div>
+  <div class="all_contents">
+    <div id="header">
+      <div class="logo">
+        <h1> JANVI KALRA </h1>
+        <h2> Computer Science & Philosophy </h2>
+      </div>
+      <nav class = "nav_bar">
+         <h4>
+           <ul class="nav_list">
+             <li><a href="./index.html">Projects</a></li>
+             <li><a href="./about.html">About</a></li>
+           </ul>
+         </h4>
+      </nav>
+    </div>
+    <div id="project_contents">
+      <div class="project_intro">
+        <h5> <b>GOAL:</b> Model the solar system by simulating gravity & calculating each planet's changing position/velocity </h5>
+        <h5> <b>SYNPOSIS:</b> Individual project | Winter 2018 | Python  </h5>
+        <h5> <b>KEY SKILLS:</b> Animation | Objects | Physics kinematic equations </h5>
+      </div>
+      <div id="project_test">
+        <h5><b> VIDEO OF SIMULATOR </b></h5>
+        <iframe width="380" height="400" src="https://www.youtube.com/embed/CMYP3yxWJdM?rel=0&showinfo=0&autoplay=1&controls=0&loop=1&playlist=CMYP3yxWJdM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h7> <br> Yellow=Sun | Orange=Mercury | Green=Venus | Blue=Earth | Red=Mars </h7>
+      </div>
+
+      <div id="project_process">
+        <h4> Key Process: </h4>
+        <h5>
+          <ol type="1">
+            <li>Created a <b>planet object</b> with mass, radius, color, velocity in the x/y direction, and x/y position as <b>instance variables</b></li>
+            <li>Created a <b>system object</b> with list of planet objects as the instance variable </li>
+            <li>Wrote a 'compute acceleration' <b>method</b> that computes the <b>total gravitational force</b> on a single planet by summing up the gravitational attraction from each planet in the system using: \(F_g = {G(m_1)(m_2) \over r^2}\)</li>
+            <li>Wrote a 'update' <b>method</b> that takes 'time elapsed' as a parameter. The method first computes the total acceleration on each planet based on the current location of the planets around it. Then, it updates the x/y <b> position </b> & x/y <b>velocity</b> instance variables of each planet in the system using \(x_f = x_i + v_x * t\) and \(v_f=v_i + a_x*t\) </li>
+            <li>Set a <b>meters to pixel conversion</b> and used it to <b>draw</b> the scaled position of each planet</li>
+            <li>Set a <b> timescale conversion</b> representing real seconds per simulation second. Used it to update the positions of each planet with respect to time, creating an <b> animation</b>. </li>
+          </ol>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+</body>

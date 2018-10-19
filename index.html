@@ -10,6 +10,44 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
   <!-- ICONS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <style>
+    div{
+      /* border: solid; */
+    }
+    .column{
+      /* border: solid; */
+      display: inline-block;
+      width: 19.5%;
+      margin: 0;
+      /* border: solid red; */
+      padding-left: 6%;
+      padding-right: 6%;
+      margin-bottom: -4%;
+    }
+
+    .row{
+      width: 100%;
+      display: inline-block;
+      /* padding: 4vh 0 0 6%; */
+      margin: 0;
+      /* border: solid yellow; */
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+
+    .all_captions{
+      width: 100%;
+      /* border: solid green; */
+    }
+
+    .one_caption{
+      width: 19.5%;
+      /* border: solid pink; */
+      display: inline-block;
+      margin:0;
+      padding:0;
+    }
+  </style>
 </head>
 
 <body>
@@ -23,7 +61,7 @@
         <nav class = "nav_bar">
            <h4>
              <ul class="nav_list">
-               <li><a href="./index.html">Projects</a></li>
+               <li><a class="current" href="./index.html">Projects</a></li>
                <li><a href="./about.html">About</a></li>
              </ul>
            </h4>
@@ -40,7 +78,6 @@
                 <a href="./huffman_encoding.html"> <img class="image" src="./icons/greenback.png"> </a>
               </div>
             </div>
-            <h3> huffman encoding </h3>
           </div>
           <div class="column">
             <div class="circle">
@@ -51,8 +88,8 @@
                 <a href="./bacon_number.html"> <img class="image" src="./icons/blueback.png"> </a>
               </div>
             </div>
-            <h3> bacon number calc. </h3>
-          </div><div class="column">
+          </div>
+          <div class="column">
             <div class="circle">
               <div class="front">
                 <a href="./POStagger.html"> <img class="image" src="./icons/POS.png"> </a>
@@ -61,27 +98,43 @@
                 <a href="./POStagger.html"> <img class="image" src="./icons/greenback.png"> </a>
               </div>
             </div>
-            <h3> speech tagger </h3>
-          </div><div class="column">
+          </div>
+          <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/catalystproject.png"> </a>
+                <a href="./controlling_comfort.html"> <img class="image" src="./icons/catalystproject.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/bluebacksimple.png"> </a>
+                <a href="./controlling_comfort.html"> <img class="image" src="./icons/bluebacksimple.png"> </a>
               </div>
             </div>
-            <h3> controlling comfort </h3>
-          </div><div class="column">
+          </div>
+          <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/personalwebsite.png"> </a>
+                <a href="./web_development.html"> <img class="image" src="./icons/personalwebsite.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/greenback.png"> </a>
+                <a href="./web_development.html"> <img class="image" src="./icons/greenback.png"> </a>
               </div>
             </div>
-            <h3> web development </h3>
+          </div>
+          <div class="all_captions">
+            <div class="one_caption">
+              <h3> huffman compressor </h3>
+            </div>
+            <div class="one_caption">
+              <h3> bacon number calc. </h3>
+            </div>
+            <div class="one_caption">
+              <h3> speech tagger </h3>
+            </div>
+            <div class="one_caption">
+              <h3> controlling comfort </h3>
+            </div>
+            <div class="one_caption">
+              <h3> web development </h3>
+            </div>
           </div>
         </div>
 
@@ -95,48 +148,63 @@
                 <a href="./comingsoon.html"> <img class="image" src="./icons/blueback.png"> </a>
               </div>
             </div>
-            <h3> robot motion planning </h3>
           </div>
           <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/dartmaps.png"> </a>
+                <a href="./dartmouth_maps.html"> <img class="image" src="./icons/dartmaps.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/greenback.png"> </a>
+                <a href="./dartmouth_maps.html"> <img class="image" src="./icons/greenback.png"> </a>
               </div>
             </div>
-            <h3> dartmouth maps </h3>
-          </div><div class="column">
+          </div>
+          <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/ataripong.png"> </a>
+                <a href="./atari_pong.html"> <img class="image" src="./icons/ataripong.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/blueback.png"> </a>
+                <a href="./atari_pong.html"> <img class="image" src="./icons/blueback.png"> </a>
               </div>
             </div>
-            <h3> atari pong game </h3>
-          </div><div class="column">
+          </div>
+          <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/virtualwhiteboard.png"> </a>
+                <a href="./virtual_whiteboard.html"> <img class="image" src="./icons/virtualwhiteboard.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/greenback.png"> </a>
+                <a href="./virtual_whiteboard.html"> <img class="image" src="./icons/greenback.png"> </a>
               </div>
             </div>
-            <h3> virtual whiteboard </h3>
-          </div><div class="column">
+          </div>
+          <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/spacetime.png"> </a>
+                <a href="./space_time_simulator.html"> <img class="image" src="./icons/spacetime.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/blueback.png"> </a>
+                <a href="./space_time_simulator.html"> <img class="image" src="./icons/blueback.png"> </a>
               </div>
             </div>
-            <h3> spacetime simulator </h3>
+          </div>
+          <div class="all_captions">
+            <div class="one_caption">
+              <h3> motion planning </h3>
+            </div>
+            <div class="one_caption">
+              <h3> dartmouth maps </h3>
+            </div>
+            <div class="one_caption">
+              <h3> atari pong game </h3>
+            </div>
+            <div class="one_caption">
+              <h3> virtual whiteboard </h3>
+            </div>
+            <div class="one_caption">
+              <h3> spacetime simulator </h3>
+            </div>
           </div>
         </div>
 
@@ -144,24 +212,30 @@
           <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/solarsystemsimulator.png"> </a>
+                <a href="./solar_system_simulator.html"> <img class="image" src="./icons/solarsystemsimulator.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/greenback.png"> </a>
+                <a href="./solar_system_simulator.html"> <img class="image" src="./icons/greenback.png"> </a>
               </div>
             </div>
-            <h3> solar system simulator </h3>
           </div>
           <div class="column">
             <div class="circle">
               <div class="front">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/chooseyouradventure.png"> </a>
+                <a href="./choose_your_adventure.html"> <img class="image" src="./icons/chooseyouradventure.png"> </a>
               </div>
               <div class="back">
-                <a href="./comingsoon.html"> <img class="image" src="./icons/blueback.png"> </a>
+                <a href="./choose_your_adventure.html"> <img class="image" src="./icons/blueback.png"> </a>
               </div>
             </div>
-            <h3> choose your adventure </h3>
+          </div>
+          <div class="all_captions">
+            <div class="one_caption">
+              <h3> solar system simulator </h3>
+            </div>
+            <div class="one_caption">
+              <h3> interactive story </h3>
+            </div>
           </div>
         </div>
       </div>

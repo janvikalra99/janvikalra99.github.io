@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="title">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Controlling Comfort </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <style>
+    .project_name {
+      margin-top: 19vh;
+      padding-right: 2%;
+    }
+    .project_name h1{
+      font-size: 15px;
+    }
+
+    #project_test{
+      height: 67vh;
+      text-align: center;
+      position: relative;
+      color: white;
+      margin: 0 auto;
+    }
+    #project_process{
+      margin-top: 5%;
+    }
+    #text_header{
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+    }
+    .caption {
+      position: absolute;
+      text-align: center;
+      width: 64%;
+      bottom: 2%;
+      left: 18%;
+      background-color: rgb(0,0,0,.75);
+    }
+    .caption_6{
+      position: absolute;
+      width: 50%;
+      bottom: 2%;
+      left: 25%;
+      background-color: rgb(0,0,0,.75);
+    }
+    .caption_8{
+      position: absolute;
+      width: 38%;
+      bottom: 2%;
+      left: 31%;
+      background-color: rgb(0,0,0,.75);
+    }
+    .caption_11{
+      position: absolute;
+      width: 20%;
+      bottom: 2%;
+      left: 40%;
+      background-color: rgb(0,0,0,.75);
+    }
+    .caption_12{
+      position: absolute;
+      width: 66%;
+      top: 1%;
+      left: 17%;
+      background-color: rgb(0,0,0,.75);
+    }
+    .slideshow img{
+      height: 66vh;
+    }
+    .project_display img{
+      display: inline-block;
+      height: 40vh;
+    }
+    .project_display {
+      text-align: center;
+    }
+    .slideshow a{
+      color: white;
+    }
+    .final_project_info{
+      display: inline-block;
+      float: left;
+      margin-top: 4%;
+      text-align: left;
+    }
+    .final_project_info ol{
+      margin: 0;
+    }
+    #badge{
+      width: 10%;
+      height: 18vh;
+      float: right;
+      margin-right: 4%;
+      margin-top: -3vh;
+      text-align: center;
+      padding: 2px;
+      display: inline-block;
+      }
+    .project_intro{
+      display: inline-block;
+      margin-bottom: 3vh;
+    }
+    th{
+      text-align: center;
+    }
+    td{
+      font-weight: 300;
+    }
+    table{
+      width: 90%;
+      margin-left: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="greyBorder"></div>
+  <div class="project_name">
+    <h1> CONTROLLING.COMFORT </h1>
+  </div>
+  <div class="all_contents">
+    <div id="header">
+      <div class="logo">
+        <h1> JANVI KALRA </h1>
+        <h2> Computer Science & Philosophy </h2>
+      </div>
+      <nav class = "nav_bar">
+         <h4>
+           <ul class="nav_list">
+             <li><a href="./index.html">Projects</a></li>
+             <li><a href="./about.html">About</a></li>
+           </ul>
+         </h4>
+      </nav>
+    </div>
+    <div id="project_contents">
+      <div class="project_intro">
+        <h5> <b>GOAL:</b> Prototyping a wearable that regulates the air conditioner’s temperature in accordance to the user’s comfort </h5>
+        <h5> <b>SYNPOSIS:</b> Individual project | Summer 2016 | Arduino/C </h5>
+        <h5> <b>SKILLS:</b> Replicating AC control mechanism | Arduino circuitry </h5>
+      </div>
+      <div id="badge">
+        <img src="./catalyst_pix/badge.jpg" height="100%">
+      </div>
+      <br>
+      <div id="text_header">
+        <h5> <b>FINAL PRODUCT:</b> </h5>
+      <div>
+      <div class=project_display>
+        <img src="./catalyst_pix/front.jpg">
+        <img src="./catalyst_pix/back.jpg">
+      </div>
+      <br>
+      <div id="text_header">
+        <h5> <b>KEY PROCESS SLIDESHOW:</b> </h5>
+      <div>
+      <div id="project_test">
+        <div class="slideshow">
+          <img src="./catalyst_pix/2.jpg" height="100%">
+          <div class="caption"> 1. Wired the infrared (IR) receiver to the Arduino board </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/3.gif" height="100%">
+          <div class="caption"> 2. Using that and a virtual oscilloscope, determined the IR pulse pattern for my AC at every temperature </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/4.jpg" height="100%">
+          <div class="caption"> 3. Wired a IR transmitter to the Arduino. Used it to control the AC without its remote <br> <a href="https://youtu.be/bOxYQFzEd_8"> <i>Click this for video of IR transmitter successfully turning AC on </i></a> </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/6.jpg" height="100%">
+          <div class="caption_6"> 4. Wired an IR temperature sensor. Used to measure the user's finger temperature, an indication of their comfort bc of vasoconstriction/vasodilation </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/7.gif" height="100%">
+          <div class="caption"> 5. Testing the sensor on ice cream </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/8.jpg" height="100%">
+          <div class="caption_8"> 6. Wrote & debugged program that asks user for their ideal body temp, reads their actual temp, then constantly adjusts the AC setpoint using IR transmitter to maintain comfort </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/9.jpg" height="100%">
+          <div class="caption"> 7. Miniaturized prototype </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/10.jpg" height="100%">
+          <div class="caption"> 8. Wired & coded peizzo buzzer mechanism for testing purposes </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/11.jpg" height="100%">
+          <div class="caption_11"> 9. Prototype testing setup </div>
+        </div>
+        <div class="slideshow">
+          <img src="./catalyst_pix/12.jpg" height="100%">
+          <div class="caption_12"> 10. Used  water to emmulate human skin. When the boiling water reached the inputted ideal tempeture, the buzzer went off, indicating how long the process took. Result: 63°C -> 25°C in 24 minutes </div>
+        </div>
+
+        <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slideshow");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          </script>
+      </div>
+      <div class="final_project_info">
+        <h5> MENTOR: Mr. Sean Sabastian, Mechatronics Engineer, provided instrumental guidance </h5>
+        <br>
+        <table>
+          <tr>
+            <th> CURRENT LIMITATIONS </th>
+            <th> POSSIBLE SOLUTIONS </th>
+          </tr>
+          <tr>
+            <td> A finger's temperature does not accurately measure vasoconstriction/vasodilation. Thus, body temperature does not measure one's comfort </td>
+            <td> Use the LED light‑sensitive photodiodes system to measure vasoconstriction/vasodilation instead. Apple uses this system in their watch's heart rate monitor to detect the amount of blood flowing through the wrist at any given moment. </td>
+          </tr>
+          <tr>
+            <td> Each AC has a different IR pulse pattern. Consequently, this prototype only works with a Toshiba AC </td>
+            <td> Imitate the universal remote mechanism so that the wearable can control any type of AC. </td>
+        </table>
+        <br>
+      </div>
+    </div>
+    <br>
+</body>
